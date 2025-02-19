@@ -1,53 +1,102 @@
 
+import { ArrowRight, Monitor, Shield, Activity } from "lucide-react";
+
 const steps = [
   {
     number: "01",
     title: "Assessment & Consultation",
-    description: "We evaluate your Microsoft 365 environment."
+    description: "We begin with a thorough evaluation of your Microsoft 365 environment, identifying security gaps, compliance needs, and opportunities for optimization.",
+    icon: Monitor,
+    features: [
+      "Security audit",
+      "Compliance check",
+      "Performance analysis",
+      "Risk assessment"
+    ]
   },
   {
     number: "02",
     title: "Implementation & Configuration",
-    description: "Deploy security policies, compliance settings, and automation."
+    description: "Our team deploys comprehensive security policies, compliance settings, and automation workflows tailored to your business requirements.",
+    icon: Shield,
+    features: [
+      "Security policies",
+      "Compliance settings",
+      "Automation setup",
+      "User access control"
+    ]
   },
   {
     number: "03",
     title: "Ongoing Monitoring & Support",
-    description: "24/7 monitoring, regular audits, and help desk support."
+    description: "We provide continuous monitoring, regular security audits, and responsive help desk support to ensure your environment stays secure and efficient.",
+    icon: Activity,
+    features: [
+      "24/7 monitoring",
+      "Regular audits",
+      "Help desk support",
+      "Performance reports"
+    ]
   }
 ];
 
 export const Process = () => {
   return (
-    <section className="section-padding">
+    <section className="section-padding bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4">
-        <h2 className="font-display text-3xl md:text-4xl font-bold text-center mb-12">
-          How It Works
-        </h2>
+        <div className="max-w-3xl mx-auto text-center mb-16">
+          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+            How It Works
+          </h2>
+          <p className="text-muted-foreground">
+            Our proven three-step process ensures a smooth transition to managed Microsoft 365 services
+          </p>
+        </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative animate-slide-up"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="relative group"
             >
-              <div className="mb-4">
-                <span className="font-display text-6xl font-bold text-primary/20">
-                  {step.number}
-                </span>
+              <div 
+                className="glass rounded-xl p-6 h-full transition-all duration-300 hover:translate-y-[-8px] animate-fade-in"
+                style={{ animationDelay: `${index * 200}ms` }}
+              >
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center">
+                    <step.icon className="h-7 w-7 text-primary-foreground" />
+                  </div>
+                  <span className="font-display text-5xl font-bold text-primary/20">
+                    {step.number}
+                  </span>
+                </div>
+                
+                <h3 className="font-display text-xl font-semibold mb-3">
+                  {step.title}
+                </h3>
+                
+                <p className="text-muted-foreground mb-6">
+                  {step.description}
+                </p>
+                
+                <ul className="space-y-2">
+                  {step.features.map((feature, featureIndex) => (
+                    <li
+                      key={featureIndex}
+                      className="flex items-center text-sm text-muted-foreground"
+                    >
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary-foreground" />
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
               </div>
               
-              <h3 className="font-display text-xl font-semibold mb-2">
-                {step.title}
-              </h3>
-              
-              <p className="text-muted-foreground">
-                {step.description}
-              </p>
-              
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-16 right-0 w-full h-0.5 bg-primary/10" />
+                <div className="hidden md:block absolute top-1/2 right-[-1rem] w-8 h-[2px] bg-primary/20 transform translate-x-1/2">
+                  <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-primary" />
+                </div>
               )}
             </div>
           ))}

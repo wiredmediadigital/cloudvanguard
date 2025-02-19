@@ -3,6 +3,7 @@ import { Navbar } from "@/components/Navbar";
 import { Calendar, Clock, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 const articles = [
   {
@@ -10,28 +11,32 @@ const articles = [
     excerpt: "Learn the key security features and settings to protect your organization's Microsoft 365 environment.",
     date: "March 15, 2024",
     readTime: "5 min read",
-    category: "Security"
+    category: "Security",
+    slug: "security-best-practices"
   },
   {
     title: "The Future of Remote Work: Managing Distributed Teams",
     excerpt: "Discover effective strategies for managing and securing remote workforces using modern IT solutions.",
     date: "March 10, 2024",
     readTime: "7 min read",
-    category: "Management"
+    category: "Management",
+    slug: "remote-work"
   },
   {
     title: "Preparing for Cyber Threats in 2024",
     excerpt: "Stay ahead of emerging cybersecurity threats with our comprehensive guide to protection and prevention.",
     date: "March 5, 2024",
     readTime: "6 min read",
-    category: "Security"
+    category: "Security",
+    slug: "cyber-threats"
   },
   {
     title: "Cloud Migration: A Step-by-Step Guide",
     excerpt: "Everything you need to know about moving your business operations to the cloud safely and efficiently.",
     date: "March 1, 2024",
     readTime: "8 min read",
-    category: "Cloud"
+    category: "Cloud",
+    slug: "cloud-migration"
   }
 ];
 
@@ -81,9 +86,11 @@ const Blog = () => {
                     {article.excerpt}
                   </p>
 
-                  <Button variant="ghost" className="group-hover:text-primary-foreground transition-colors p-0">
-                    Read More <ChevronRight className="ml-1 h-4 w-4" />
-                  </Button>
+                  <Link to={`/blog/${article.slug}`}>
+                    <Button variant="ghost" className="group-hover:text-primary-foreground transition-colors p-0">
+                      Read More <ChevronRight className="ml-1 h-4 w-4" />
+                    </Button>
+                  </Link>
                 </div>
               ))}
             </div>

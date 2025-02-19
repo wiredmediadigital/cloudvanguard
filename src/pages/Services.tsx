@@ -1,40 +1,51 @@
 
 import { Navbar } from "@/components/Navbar";
-import { Shield, Headset, Lock, Server, Database } from "lucide-react";
+import { Shield, Headset, Lock, Server, Database, Clock, LineChart, BarChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const services = [
   {
     icon: Shield,
-    title: "Microsoft 365 Endpoint Management",
-    description: "Comprehensive management and security for your Microsoft 365 environment, including device management, security policies, and compliance controls.",
+    title: "Professional Services",
+    description: "Expert IT consulting and implementation services tailored to your business needs and goals.",
     features: [
-      "Device enrollment and configuration",
-      "Security policy management",
-      "Compliance monitoring",
-      "Software deployment"
+      "IT strategy consulting",
+      "Project management",
+      "Implementation services",
+      "Technology assessment"
     ]
   },
   {
-    icon: Headset,
-    title: "IT Help Desk & Support",
-    description: "24/7 technical support and help desk services to keep your business running smoothly with minimal disruption.",
+    icon: Clock,
+    title: "24/7 Managed Security Services",
+    description: "Round-the-clock monitoring and management of your IT security infrastructure.",
     features: [
-      "24/7 technical support",
-      "Remote troubleshooting",
-      "User account management",
-      "Hardware and software support"
+      "Continuous monitoring",
+      "Incident response",
+      "Security updates",
+      "Threat prevention"
     ]
   },
   {
     icon: Lock,
-    title: "Cybersecurity & Compliance",
-    description: "Robust security solutions and compliance management to protect your business from evolving cyber threats.",
+    title: "Cyber Threat Intelligence Services",
+    description: "Advanced threat detection and intelligence services to protect your business.",
     features: [
-      "Threat detection and response",
-      "Security awareness training",
-      "Compliance audits",
-      "Data protection"
+      "Threat detection",
+      "Intelligence reporting",
+      "Vulnerability assessment",
+      "Security advisories"
+    ]
+  },
+  {
+    icon: LineChart,
+    title: "Performance Analytics Services",
+    description: "Comprehensive analytics and reporting to optimize your IT infrastructure performance.",
+    features: [
+      "Performance monitoring",
+      "System analytics",
+      "Resource optimization",
+      "Trend analysis"
     ]
   },
   {
@@ -46,17 +57,6 @@ const services = [
       "SaaS application management",
       "Cloud security",
       "Performance monitoring"
-    ]
-  },
-  {
-    icon: Database,
-    title: "Backup & Disaster Recovery",
-    description: "Comprehensive backup solutions and disaster recovery planning to ensure business continuity.",
-    features: [
-      "Automated backups",
-      "Disaster recovery planning",
-      "Data retention management",
-      "Quick recovery solutions"
     ]
   }
 ];

@@ -13,12 +13,12 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-border shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-display font-bold text-xl">M</span>
+              <span className="text-primary-foreground font-display font-bold text-xl">M</span>
             </div>
             <span className="font-display text-xl font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               MSP Solutions
@@ -69,14 +69,14 @@ export const Navbar = () => {
             <Button 
               variant="default" 
               size="sm"
-              className="bg-primary hover:bg-primary/90 text-white"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground"
             >
               Get Started
             </Button>
           </div>
 
           <button
-            className="md:hidden"
+            className="md:hidden text-foreground"
             onClick={() => setIsOpen(!isOpen)}
           >
             <Menu className="h-6 w-6" />
@@ -85,7 +85,7 @@ export const Navbar = () => {
       </div>
 
       {isOpen && (
-        <div className="md:hidden border-t border-border bg-white">
+        <div className="md:hidden border-t border-border bg-background">
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
               to="/services"
@@ -129,7 +129,7 @@ export const Navbar = () => {
             </Link>
             <div className="px-3 py-2">
               <Button 
-                className="w-full bg-primary hover:bg-primary/90 text-white" 
+                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" 
                 variant="default" 
                 size="sm"
               >

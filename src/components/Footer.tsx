@@ -72,27 +72,27 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="/services#managed-it" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <a href="/services/managed-it" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Managed IT Services
                 </a>
               </li>
               <li>
-                <a href="/services#cybersecurity" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <a href="/services/cybersecurity" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Cybersecurity
                 </a>
               </li>
               <li>
-                <a href="/services#cloud" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <a href="/services/cloud-solutions" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Cloud Solutions
                 </a>
               </li>
               <li>
-                <a href="/services#microsoft365" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <a href="/services/microsoft-365" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Microsoft 365 Management
                 </a>
               </li>
               <li>
-                <a href="/services#backup" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <a href="/services/backup-recovery" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Backup & Recovery
                 </a>
               </li>

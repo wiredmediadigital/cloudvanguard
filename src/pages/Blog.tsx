@@ -2,6 +2,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Calendar, Clock, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Footer } from "@/components/Footer";
 
 const articles = [
   {
@@ -89,6 +90,7 @@ const Blog = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

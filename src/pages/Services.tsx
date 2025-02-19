@@ -67,10 +67,10 @@ const Services = () => {
       <Navbar />
       <main>
         <section className="pt-32 pb-16 md:pt-40 md:pb-24 relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
+          <div className="absolute inset-0 bg-[#0039A6]/5" />
           <div className="container mx-auto px-4 relative">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
+              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 animate-fade-in text-[#0039A6]">
                 Our Managed IT Services
               </h1>
               <p className="text-lg text-muted-foreground animation-delay-200 animate-fade-in">
@@ -82,18 +82,18 @@ const Services = () => {
               {services.map((service, index) => (
                 <div
                   key={index}
-                  className="glass p-6 rounded-lg animate-slide-up"
+                  className="bg-white border border-gray-100 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow animate-slide-up"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <service.icon className="h-6 w-6 text-primary-foreground" />
+                  <div className="bg-[#0039A6]/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                    <service.icon className="h-6 w-6 text-[#0039A6]" />
                   </div>
 
-                  <h3 className="font-display text-xl font-semibold mb-3">
+                  <h3 className="font-display text-xl font-semibold mb-3 text-[#0039A6]">
                     {service.title}
                   </h3>
 
-                  <p className="text-muted-foreground mb-4">
+                  <p className="text-gray-600 mb-4">
                     {service.description}
                   </p>
 
@@ -101,9 +101,9 @@ const Services = () => {
                     {service.features.map((feature, featureIndex) => (
                       <li
                         key={featureIndex}
-                        className="flex items-center text-sm text-muted-foreground"
+                        className="flex items-center text-sm text-gray-600"
                       >
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#0039A6] mr-2" />
                         {feature}
                       </li>
                     ))}
@@ -113,7 +113,10 @@ const Services = () => {
             </div>
 
             <div className="mt-16 text-center">
-              <Button size="lg" className="animate-fade-in">
+              <Button 
+                size="lg" 
+                className="bg-[#0039A6] hover:bg-[#002d84] text-white animate-fade-in"
+              >
                 Schedule a Consultation
               </Button>
             </div>

@@ -1,34 +1,24 @@
+
 import { Navbar } from "@/components/Navbar";
-import { Building2, Briefcase, Hospital, Scale, Factory } from "lucide-react";
+import { 
+  Building2, 
+  Briefcase, 
+  Hospital, 
+  Truck, 
+  Building, 
+  Heart, 
+  Globe2, 
+  Factory, 
+  Train, 
+  Phone 
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const industries = [
   {
     icon: Building2,
-    title: "Small & Medium Businesses",
-    description: "Tailored IT solutions that help SMBs compete and grow in the digital marketplace.",
-    features: [
-      "Cost-effective IT management",
-      "Scalable solutions",
-      "Business continuity planning",
-      "Cloud migration services"
-    ]
-  },
-  {
-    icon: Hospital,
-    title: "Healthcare",
-    description: "HIPAA-compliant IT solutions for healthcare providers and medical practices.",
-    features: [
-      "HIPAA compliance",
-      "Electronic health records security",
-      "Medical device management",
-      "Data backup and recovery"
-    ]
-  },
-  {
-    icon: Briefcase,
-    title: "Finance",
-    description: "Secure and compliant IT solutions for financial services firms.",
+    title: "Financial Services",
+    description: "Secure and compliant IT solutions for banks, investment firms, and financial institutions.",
     features: [
       "Financial data security",
       "Regulatory compliance",
@@ -37,25 +27,102 @@ const industries = [
     ]
   },
   {
-    icon: Scale,
-    title: "Legal",
-    description: "IT solutions designed for law firms and legal service providers.",
+    icon: Building,
+    title: "Government & Public Sector",
+    description: "Reliable IT infrastructure and security solutions for government agencies and public services.",
     features: [
-      "Document management",
-      "Client data protection",
-      "Secure communication platforms",
-      "Case management systems"
+      "Secure data management",
+      "Compliance frameworks",
+      "Public service platforms",
+      "Digital transformation"
+    ]
+  },
+  {
+    icon: Hospital,
+    title: "Hospital & Health Care",
+    description: "HIPAA-compliant IT solutions for healthcare providers and medical practices.",
+    features: [
+      "HIPAA compliance",
+      "Electronic health records",
+      "Medical device security",
+      "Patient data protection"
+    ]
+  },
+  {
+    icon: Globe2,
+    title: "IT & Tech Services",
+    description: "Advanced IT infrastructure and support for technology companies and service providers.",
+    features: [
+      "Cloud infrastructure",
+      "DevOps solutions",
+      "System integration",
+      "Technical support"
+    ]
+  },
+  {
+    icon: Train,
+    title: "Leisure, Travel & Tourism",
+    description: "Digital solutions for travel agencies, hotels, and tourism businesses.",
+    features: [
+      "Booking systems",
+      "Customer data security",
+      "Mobile solutions",
+      "Payment processing"
     ]
   },
   {
     icon: Factory,
-    title: "Manufacturing",
-    description: "IT solutions that support modern manufacturing operations.",
+    title: "Manufacturing & Distribution",
+    description: "IT solutions that support modern manufacturing and distribution operations.",
     features: [
       "Industrial IoT support",
-      "Production system security",
-      "Supply chain integration",
-      "Quality control systems"
+      "Supply chain systems",
+      "Inventory management",
+      "Quality control"
+    ]
+  },
+  {
+    icon: Truck,
+    title: "Transportation",
+    description: "Comprehensive IT solutions for transportation and logistics companies.",
+    features: [
+      "Fleet management",
+      "Route optimization",
+      "Real-time tracking",
+      "Logistics software"
+    ]
+  },
+  {
+    icon: Building2,
+    title: "Mining, Oil & Energy",
+    description: "Specialized IT solutions for energy and resource extraction industries.",
+    features: [
+      "Operations monitoring",
+      "Safety systems",
+      "Resource management",
+      "Compliance tracking"
+    ]
+  },
+  {
+    icon: Briefcase,
+    title: "Retail & E-commerce",
+    description: "Digital solutions for modern retail and e-commerce businesses.",
+    features: [
+      "POS systems",
+      "E-commerce platforms",
+      "Inventory control",
+      "Payment security"
+    ]
+  },
+  {
+    icon: Phone,
+    title: "Telecommunication",
+    description: "IT infrastructure and support for telecommunication service providers.",
+    features: [
+      "Network management",
+      "Service monitoring",
+      "Infrastructure security",
+      "Customer systems"
     ]
   }
 ];

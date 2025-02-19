@@ -57,7 +57,7 @@ const Contact = () => {
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 mb-12">
-              <div className="glass p-6 rounded-lg animate-slide-up">
+              <div className="glass p-6 rounded-lg animate-slide-up hover:-translate-y-2 transition-all duration-300">
                 <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <Mail className="h-6 w-6 text-primary-foreground" />
                 </div>
@@ -65,7 +65,7 @@ const Contact = () => {
                 <p className="text-muted-foreground">contact@mspsolutions.com</p>
               </div>
 
-              <div className="glass p-6 rounded-lg animate-slide-up animation-delay-200">
+              <div className="glass p-6 rounded-lg animate-slide-up hover:-translate-y-2 transition-all duration-300 animation-delay-200">
                 <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <Phone className="h-6 w-6 text-primary-foreground" />
                 </div>
@@ -73,7 +73,7 @@ const Contact = () => {
                 <p className="text-muted-foreground">(555) 123-4567</p>
               </div>
 
-              <div className="glass p-6 rounded-lg animate-slide-up animation-delay-400">
+              <div className="glass p-6 rounded-lg animate-slide-up hover:-translate-y-2 transition-all duration-300 animation-delay-400">
                 <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <MapPin className="h-6 w-6 text-primary-foreground" />
                 </div>
@@ -83,10 +83,10 @@ const Contact = () => {
             </div>
 
             <div className="max-w-2xl mx-auto">
-              <div className="glass p-8 rounded-lg animate-slide-up">
+              <div className="glass p-8 rounded-lg animate-fade-in animation-delay-200">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div>
+                    <div className="group">
                       <label htmlFor="name" className="block text-sm font-medium mb-2">
                         Name
                       </label>
@@ -96,9 +96,10 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
+                        className="transition-all duration-300 focus:ring-2 focus:ring-primary/50 hover:border-primary/50"
                       />
                     </div>
-                    <div>
+                    <div className="group">
                       <label htmlFor="email" className="block text-sm font-medium mb-2">
                         Email
                       </label>
@@ -109,12 +110,13 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
+                        className="transition-all duration-300 focus:ring-2 focus:ring-primary/50 hover:border-primary/50"
                       />
                     </div>
                   </div>
                   
                   <div className="grid md:grid-cols-2 gap-6">
-                    <div>
+                    <div className="group">
                       <label htmlFor="phone" className="block text-sm font-medium mb-2">
                         Phone
                       </label>
@@ -124,9 +126,10 @@ const Contact = () => {
                         type="tel"
                         value={formData.phone}
                         onChange={handleChange}
+                        className="transition-all duration-300 focus:ring-2 focus:ring-primary/50 hover:border-primary/50"
                       />
                     </div>
-                    <div>
+                    <div className="group">
                       <label htmlFor="company" className="block text-sm font-medium mb-2">
                         Company
                       </label>
@@ -135,11 +138,12 @@ const Contact = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
+                        className="transition-all duration-300 focus:ring-2 focus:ring-primary/50 hover:border-primary/50"
                       />
                     </div>
                   </div>
 
-                  <div>
+                  <div className="group">
                     <label htmlFor="message" className="block text-sm font-medium mb-2">
                       Message
                     </label>
@@ -150,10 +154,15 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       required
+                      className="transition-all duration-300 focus:ring-2 focus:ring-primary/50 hover:border-primary/50 resize-none"
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="w-full transition-all duration-300 hover:scale-[1.02] active:scale-[0.98]"
+                  >
                     Send Message
                   </Button>
                 </form>

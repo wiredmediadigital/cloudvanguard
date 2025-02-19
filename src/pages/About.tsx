@@ -1,6 +1,7 @@
 
 import { Navbar } from "@/components/Navbar";
 import { Award, Users, Building2, CheckCircle } from "lucide-react";
+import { Footer } from "@/components/Footer";
 
 const certifications = [
   "Microsoft Gold Partner",
@@ -92,6 +93,7 @@ const About = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

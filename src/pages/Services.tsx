@@ -2,6 +2,7 @@
 import { Navbar } from "@/components/Navbar";
 import { Shield, Headset, Lock, Server, Database, Clock, LineChart, BarChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Footer } from "@/components/Footer";
 
 const services = [
   {
@@ -120,6 +121,7 @@ const Services = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

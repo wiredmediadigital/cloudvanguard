@@ -13,6 +13,7 @@ import {
   Phone 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Footer } from "@/components/Footer";
 
 const industries = [
   {
@@ -186,6 +187,7 @@ const Industries = () => {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 };

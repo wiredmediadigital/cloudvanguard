@@ -1,5 +1,5 @@
 
-import { Mail, Phone, MapPin, Facebook, Twitter, LinkedIn } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Footer = () => {
@@ -125,7 +125,7 @@ export const Footer = () => {
                 <Twitter className="h-5 w-5" />
               </a>
               <a href="#" className="text-muted-foreground hover:text-primary-foreground transition-colors">
-                <LinkedIn className="h-5 w-5" />
+                <Linkedin className="h-5 w-5" />
               </a>
             </div>
           </div>

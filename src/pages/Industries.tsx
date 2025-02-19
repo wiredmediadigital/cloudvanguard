@@ -1,6 +1,5 @@
-
 import { Navbar } from "@/components/Navbar";
-import { Building2, Briefcase, Hospital, Scales, Factory } from "lucide-react";
+import { Building2, Briefcase, Hospital, Scale, Factory } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const industries = [
@@ -38,7 +37,7 @@ const industries = [
     ]
   },
   {
-    icon: Scales,
+    icon: Scale,
     title: "Legal",
     description: "IT solutions designed for law firms and legal service providers.",
     features: [

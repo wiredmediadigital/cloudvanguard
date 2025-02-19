@@ -44,30 +44,30 @@ export const Process = () => {
   return (
     <section className="section-padding bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="font-display text-3xl md:text-4xl font-bold mb-4">
+        <div className="max-w-3xl mx-auto text-center mb-8 md:mb-16">
+          <h2 className="font-display text-2xl md:text-4xl font-bold mb-4">
             How It Works
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground px-4 md:px-0">
             Our proven three-step process ensures a smooth transition to managed Microsoft 365 services
           </p>
         </div>
         
-        <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-3 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {steps.map((step, index) => (
             <div
               key={index}
               className="relative group"
             >
               <div 
-                className="glass rounded-xl p-6 h-full transition-all duration-300 hover:translate-y-[-8px] animate-fade-in"
+                className="glass rounded-xl p-6 h-full transition-all duration-300 hover:-translate-y-2 animate-fade-in"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center">
-                    <step.icon className="h-7 w-7 text-primary-foreground" />
+                  <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <step.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <span className="font-display text-5xl font-bold text-primary/20">
+                  <span className="font-display text-4xl font-bold text-primary/20">
                     {step.number}
                   </span>
                 </div>
@@ -76,7 +76,7 @@ export const Process = () => {
                   {step.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-6 text-sm md:text-base">
                   {step.description}
                 </p>
                 
@@ -86,15 +86,15 @@ export const Process = () => {
                       key={featureIndex}
                       className="flex items-center text-sm text-muted-foreground"
                     >
-                      <ArrowRight className="h-4 w-4 mr-2 text-primary-foreground" />
-                      {feature}
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary-foreground shrink-0" />
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
               
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-1/2 right-[-1rem] w-8 h-[2px] bg-primary/20 transform translate-x-1/2">
+                <div className="hidden lg:block absolute top-1/2 right-[-1rem] w-8 h-[2px] bg-primary/20 transform translate-x-1/2">
                   <div className="absolute right-0 top-1/2 transform translate-x-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-primary" />
                 </div>
               )}

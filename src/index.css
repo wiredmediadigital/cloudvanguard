@@ -13,26 +13,26 @@
     --card: 0 0% 100%;
     --card-foreground: 222 47% 11%;
     
-    --primary: 215 100% 34%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 252 95% 85%;
+    --primary-foreground: 252 95% 25%;
     
-    --secondary: 215 100% 96%;
-    --secondary-foreground: 215 100% 34%;
+    --secondary: 220 14% 96%;
+    --secondary-foreground: 222 47% 11%;
     
     --muted: 220 14% 96%;
     --muted-foreground: 220 8% 46%;
     
-    --accent: 215 100% 98%;
-    --accent-foreground: 215 100% 34%;
+    --accent: 252 95% 95%;
+    --accent-foreground: 252 95% 35%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 215 100% 34%;
+    --ring: 252 95% 85%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
   }
 
   * {
@@ -44,7 +44,7 @@
   }
 
   .glass {
-    @apply bg-white/95 backdrop-blur-md border border-white/20 shadow-lg;
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-lg;
   }
 
   .section-padding {

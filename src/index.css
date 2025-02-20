@@ -8,19 +8,19 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222 47% 11%;
+    --foreground: 217 33% 17%;
     
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 217 33% 17%;
     
-    --primary: 217 33% 11%;
+    --primary: 222 47% 11%;
     --primary-foreground: 210 40% 98%;
     
-    --secondary: 216 32% 17%;
+    --secondary: 215 25% 27%;
     --secondary-foreground: 210 40% 98%;
     
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215 20% 65%;
+    --muted-foreground: 215 25% 40%;
     
     --accent: 217 91% 60%;
     --accent-foreground: 210 40% 98%;
@@ -68,11 +68,11 @@
   }
 
   p {
-    @apply text-base text-secondary;
+    @apply text-base text-primary;
   }
 
   .text-small {
-    @apply text-sm text-secondary;
+    @apply text-sm text-primary;
   }
 }
 

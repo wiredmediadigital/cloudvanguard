@@ -17,7 +17,7 @@ const Microsoft365 = () => {
                 Microsoft 365 Management
               </h1>
               <p className="text-lg text-muted-foreground animation-delay-200 animate-fade-in">
-                Comprehensive management and support for your Microsoft 365 environment
+                Complete Microsoft Security & Configuration Solutions
               </p>
             </div>
 

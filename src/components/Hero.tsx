@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 export const Hero = () => {
-  return (
-    <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative overflow-hidden">
+  return <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
       
       <div className="container mx-auto px-4 relative">
@@ -13,19 +10,15 @@ export const Hero = () => {
             Seamless Microsoft 365 Endpoint Management for Your Business
           </h1>
           
-          <p className="text-base md:text-xl text-muted-foreground mb-6 md:mb-8 animation-delay-200 animate-fade-in px-4 md:px-0">
+          <p className="text-base md:text-xl mb-6 md:mb-8 animation-delay-200 animate-fade-in px-4 md:px-0 text-gray-950">
             Enhance security, streamline operations, and ensure compliance with our expert-managed Microsoft 365 solutions.
           </p>
           
-          <Button
-            size="lg"
-            className="animation-delay-400 animate-fade-in w-full md:w-auto"
-          >
+          <Button size="lg" className="animation-delay-400 animate-fade-in w-full md:w-auto">
             Get a Free IT Assessment
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

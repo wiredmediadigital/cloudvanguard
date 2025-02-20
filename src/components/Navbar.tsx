@@ -69,7 +69,7 @@ export const Navbar = () => {
               Contact
             </Link>
             <div className="px-3 py-2">
-              <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" variant="default" size="sm">
+              <Button variant="default" size="sm" className="w-full bg-gray-950 hover:bg-gray-800 font-normal text-slate-50">
                 Get Started
               </Button>
             </div>

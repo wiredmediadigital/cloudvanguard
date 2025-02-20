@@ -17,7 +17,7 @@ const benefits = [{
   description: "Secure and manage company devices remotely."
 }];
 export const Benefits = () => {
-  return <section className="section-padding bg-secondary">
+  return <section className="section-padding bg-slate-100">
       <div className="container mx-auto px-4">
         <h2 className="font-display text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12">
           Key Benefits

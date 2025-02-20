@@ -1,24 +1,35 @@
+
 import { Button } from "@/components/ui/button";
-import { Menu } from "lucide-react";
+import { Menu, Home } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  
   const isActiveLink = (path: string) => {
     return location.pathname === path;
   };
+
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-sans font-bold text-xl">M</span>
-            </div>
-            <span className="font-sans text-xl font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              MSP Solutions
-            </span>
-          </Link>
+          <div className="flex items-center space-x-4">
+            <Link to="/" className="flex items-center space-x-2">
+              <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+                <span className="text-primary-foreground font-sans font-bold text-xl">M</span>
+              </div>
+              <span className="font-sans text-xl font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                MSP Solutions
+              </span>
+            </Link>
+            <Link to="/">
+              <Button variant="ghost" size="icon" className="hidden md:flex">
+                <Home className="h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
           
           <div className="hidden md:flex items-center space-x-8">
             <Link to="/services" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/services') ? 'text-accent' : 'text-secondary'}`}>
@@ -47,6 +58,9 @@ export const Navbar = () => {
 
       {isOpen && <div className="md:hidden border-t border-border bg-background">
           <div className="px-2 pt-2 pb-3 space-y-1">
+            <Link to="/" className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-accent/10 hover:text-accent ${isActiveLink('/') ? 'text-accent bg-accent/10' : 'text-secondary'}`}>
+              Home
+            </Link>
             <Link to="/services" className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-accent/10 hover:text-accent ${isActiveLink('/services') ? 'text-accent bg-accent/10' : 'text-secondary'}`}>
               Services
             </Link>

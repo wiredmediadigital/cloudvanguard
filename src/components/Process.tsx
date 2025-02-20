@@ -39,7 +39,7 @@ export const Process = () => {
                   <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-zinc-900 hover:bg-zinc-800">
                     <step.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
-                  <span className="font-display text-4xl font-bold text-primary/20">
+                  <span className="font-display text-4xl font-bold text-zinc-950">
                     {step.number}
                   </span>
                 </div>

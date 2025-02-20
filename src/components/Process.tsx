@@ -54,7 +54,7 @@ export const Process = () => {
                 
                 <ul className="space-y-2">
                   {step.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                      <ArrowRight className="h-4 w-4 mr-2 text-primary-foreground shrink-0" />
+                      <ArrowRight className="h-4 w-4 mr-2 text-primary-foreground shrink-0 bg-gray-950 hover:bg-gray-800" />
                       <span className="text-gray-950">{feature}</span>
                     </li>)}
                 </ul>

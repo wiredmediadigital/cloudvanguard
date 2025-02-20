@@ -1,8 +1,66 @@
 
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Mail, Users, Calendar, FileText, Settings } from "lucide-react";
+import { Mail, Users, Calendar, FileText, Settings, Shield, Cloud, Lock, MonitorSmartphone, Database, AlertCircle, Binary } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const services = [
+  {
+    icon: Cloud,
+    title: "Configure Microsoft Windows 365",
+    description: "Expert configuration and management of Windows 365 Cloud PC environments for your organization."
+  },
+  {
+    icon: MonitorSmartphone,
+    title: "Azure Virtual Desktop Configuration",
+    description: "Comprehensive setup and optimization of Azure Virtual Desktop infrastructure."
+  },
+  {
+    icon: Lock,
+    title: "Configure Microsoft PIM",
+    description: "Implementation of Privileged Identity Management for enhanced security control."
+  },
+  {
+    icon: Shield,
+    title: "Configure Defender for Cloud Apps",
+    description: "Advanced setup of Microsoft Defender for comprehensive cloud application security."
+  },
+  {
+    icon: Users,
+    title: "Defender for Identity Configuration",
+    description: "Identity protection through Microsoft Defender security solutions."
+  },
+  {
+    icon: Mail,
+    title: "Office 365 Security Assessment",
+    description: "Thorough security evaluation of Office 365 environments and implementations."
+  },
+  {
+    icon: Database,
+    title: "Active Directory Security Assessment",
+    description: "Complete security analysis of Active Directory infrastructure and policies."
+  },
+  {
+    icon: Settings,
+    title: "Intune All-In-One Deployment",
+    description: "Full implementation of Microsoft Intune for device management."
+  },
+  {
+    icon: Shield,
+    title: "Configure Defender for Endpoint",
+    description: "Setup and optimization of endpoint protection through Microsoft Defender."
+  },
+  {
+    icon: AlertCircle,
+    title: "Legacy Authentication Analysis",
+    description: "Analysis and secure disablement of legacy authentication methods."
+  },
+  {
+    icon: Binary,
+    title: "Azure Sentinel Deployment",
+    description: "Complete deployment and configuration of Azure Sentinel security solutions."
+  }
+];
 
 const Microsoft365 = () => {
   return (
@@ -16,52 +74,37 @@ const Microsoft365 = () => {
               <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
                 Microsoft 365 Management
               </h1>
-              <p className="text-lg text-muted-foreground animation-delay-200 animate-fade-in">
+              <p className="text-lg text-muted-foreground mb-8 animation-delay-200 animate-fade-in">
                 Complete Microsoft Security & Configuration Solutions
+              </p>
+              <p className="text-base text-muted-foreground animation-delay-300 animate-fade-in">
+                Expertly configuring and securing Microsoft environments, we offer specialized services in Windows 365, Azure, PIM, Defender for Cloud Apps, Office 365, Active Directory, Intune, and more.
               </p>
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              <div className="glass p-6 rounded-lg animate-slide-up">
-                <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Mail className="h-6 w-6 text-primary-foreground" />
+              {services.map((service, index) => (
+                <div
+                  key={index}
+                  className="glass p-6 rounded-lg animate-slide-up hover:shadow-lg transition-all duration-300"
+                  style={{ animationDelay: `${index * 100}ms` }}
+                >
+                  <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                    <service.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-display text-xl font-semibold mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="font-display text-xl font-semibold mb-3">
-                  Email Management
-                </h3>
-                <p className="text-muted-foreground">
-                  Complete email management and security solutions for Microsoft 365.
-                </p>
-              </div>
-
-              <div className="glass p-6 rounded-lg animate-slide-up animation-delay-100">
-                <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="h-6 w-6 text-primary-foreground" />
-                </div>
-                <h3 className="font-display text-xl font-semibold mb-3">
-                  User Management
-                </h3>
-                <p className="text-muted-foreground">
-                  Efficient user access and license management for your organization.
-                </p>
-              </div>
-
-              <div className="glass p-6 rounded-lg animate-slide-up animation-delay-200">
-                <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                  <Settings className="h-6 w-6 text-primary-foreground" />
-                </div>
-                <h3 className="font-display text-xl font-semibold mb-3">
-                  Configuration & Support
-                </h3>
-                <p className="text-muted-foreground">
-                  Expert configuration and ongoing support for Microsoft 365 services.
-                </p>
-              </div>
+              ))}
             </div>
 
             <div className="mt-16 text-center">
               <Button size="lg" className="animate-fade-in">
-                Get Microsoft 365 Support
+                Schedule a Consultation
               </Button>
             </div>
           </div>

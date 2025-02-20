@@ -1,0 +1,8 @@
+
+<svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="20" height="20" fill="#F25022"/>
+  <rect x="32" y="10" width="20" height="20" fill="#7FBA00"/>
+  <rect x="10" y="32" width="20" height="20" fill="#00A4EF"/>
+  <rect x="32" y="32" width="20" height="20" fill="#FFB900"/>
+  <text x="80" y="25" fill="currentColor" font-family="Arial" font-size="14" text-anchor="middle">Microsoft</text>
+</svg>

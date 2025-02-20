@@ -1,10 +1,7 @@
-
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 export const Footer = () => {
-  return (
-    <footer className="bg-white border-t">
+  return <footer className="bg-white border-t">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
@@ -24,10 +21,7 @@ export const Footer = () => {
                 <Phone className="h-4 w-4 mr-2" />
                 (123) 456-7890
               </a>
-              <div className="flex items-center text-sm text-muted-foreground">
-                <MapPin className="h-4 w-4 mr-2" />
-                123 Business Ave, Suite 100<br />New York, NY 10001
-              </div>
+              
             </div>
           </div>
 
@@ -108,11 +102,7 @@ export const Footer = () => {
               Subscribe to our newsletter for the latest cybersecurity insights and updates.
             </p>
             <form className="space-y-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-2 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              />
+              <input type="email" placeholder="Enter your email" className="w-full px-4 py-2 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
               <Button type="submit" className="w-full">
                 Subscribe
               </Button>
@@ -147,6 +137,5 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };

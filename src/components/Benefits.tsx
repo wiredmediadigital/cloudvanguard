@@ -19,7 +19,7 @@ const benefits = [{
 export const Benefits = () => {
   return <section className="section-padding bg-slate-100">
       <div className="container mx-auto px-4">
-        <h2 className="font-display text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12">
+        <h2 className="font-display md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-950 text-4xl">
           Key Benefits
         </h2>
         

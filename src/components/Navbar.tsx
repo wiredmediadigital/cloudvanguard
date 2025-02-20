@@ -36,9 +36,7 @@ export const Navbar = () => {
             <Link to="/contact" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/contact') ? 'text-accent' : 'text-secondary'}`}>
               Contact
             </Link>
-            <Button variant="default" size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground font-extralight rounded-sm">
-              Get Started
-            </Button>
+            <Button variant="default" size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground font-extralight rounded-sm">Book A Consultation</Button>
           </div>
 
           <button className="md:hidden text-primary" onClick={() => setIsOpen(!isOpen)}>

@@ -87,7 +87,7 @@ const Services = () => {
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
                   <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <service.icon className="h-6 w-6 text-primary-foreground" />
+                    <service.icon className="h-6 w-6 text-[#1A1F2C]" />
                   </div>
 
                   <h3 className="font-display text-xl font-semibold mb-3">
@@ -104,7 +104,7 @@ const Services = () => {
                         key={featureIndex}
                         className="flex items-center text-sm text-muted-foreground"
                       >
-                        <div className="w-1.5 h-1.5 rounded-full bg-primary mr-2" />
+                        <div className="w-1.5 h-1.5 rounded-full bg-[#1A1F2C] mr-2" />
                         {feature}
                       </li>
                     ))}

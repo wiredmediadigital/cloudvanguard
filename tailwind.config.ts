@@ -83,6 +83,9 @@ export default {
         sans: ["Inter", "sans-serif"],
         display: ["Outfit", "sans-serif"],
       },
+      spacing: {
+        'section': '8rem',
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

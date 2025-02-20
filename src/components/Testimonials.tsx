@@ -49,7 +49,7 @@ export const Testimonials = () => {
       {/* Trusted Companies Section */}
       <section className="py-12 bg-slate-50">
         <div className="container mx-auto px-4">
-          <h3 className="text-center text-lg font-medium text-muted-foreground mb-8">
+          <h3 className="text-center text-lg font-medium mb-8 text-gray-950">
             Trusted by Industry Leaders
           </h3>
           

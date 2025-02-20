@@ -25,7 +25,7 @@ export const Process = () => {
           <h2 className="font-display text-2xl md:text-4xl font-bold mb-4">
             How It Works
           </h2>
-          <p className="text-muted-foreground px-4 md:px-0">
+          <p className="px-4 md:px-0 text-gray-950">
             Our proven three-step process ensures a smooth transition to managed Microsoft 365 services
           </p>
         </div>
@@ -48,14 +48,14 @@ export const Process = () => {
                   {step.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6 text-sm md:text-base">
+                <p className="mb-6 text-sm md:text-base text-gray-950">
                   {step.description}
                 </p>
                 
                 <ul className="space-y-2">
                   {step.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
                       <ArrowRight className="h-4 w-4 mr-2 text-primary-foreground shrink-0" />
-                      <span>{feature}</span>
+                      <span className="text-gray-950">{feature}</span>
                     </li>)}
                 </ul>
               </div>

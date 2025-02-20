@@ -18,9 +18,9 @@ export const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-display font-bold text-xl">M</span>
+              <span className="text-primary-foreground font-sans font-bold text-xl">M</span>
             </div>
-            <span className="font-display text-xl font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="font-sans text-xl font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               MSP Solutions
             </span>
           </Link>
@@ -28,40 +28,40 @@ export const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <Link 
               to="/services" 
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActiveLink('/services') ? 'text-primary' : 'text-foreground'
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                isActiveLink('/services') ? 'text-accent' : 'text-secondary'
               }`}
             >
               Services
             </Link>
             <Link 
               to="/about"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActiveLink('/about') ? 'text-primary' : 'text-foreground'
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                isActiveLink('/about') ? 'text-accent' : 'text-secondary'
               }`}
             >
               About
             </Link>
             <Link 
               to="/industries"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActiveLink('/industries') ? 'text-primary' : 'text-foreground'
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                isActiveLink('/industries') ? 'text-accent' : 'text-secondary'
               }`}
             >
               Industries
             </Link>
             <Link 
               to="/blog"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActiveLink('/blog') ? 'text-primary' : 'text-foreground'
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                isActiveLink('/blog') ? 'text-accent' : 'text-secondary'
               }`}
             >
               Blog
             </Link>
             <Link 
               to="/contact"
-              className={`text-sm font-medium transition-colors hover:text-primary ${
-                isActiveLink('/contact') ? 'text-primary' : 'text-foreground'
+              className={`text-sm font-medium transition-colors hover:text-accent ${
+                isActiveLink('/contact') ? 'text-accent' : 'text-secondary'
               }`}
             >
               Contact
@@ -76,7 +76,7 @@ export const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-primary"
             onClick={() => setIsOpen(!isOpen)}
           >
             <Menu className="h-6 w-6" />
@@ -89,40 +89,40 @@ export const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1">
             <Link
               to="/services"
-              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-primary/10 hover:text-primary ${
-                isActiveLink('/services') ? 'text-primary bg-primary/10' : 'text-foreground'
+              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-accent/10 hover:text-accent ${
+                isActiveLink('/services') ? 'text-accent bg-accent/10' : 'text-secondary'
               }`}
             >
               Services
             </Link>
             <Link
               to="/about"
-              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-primary/10 hover:text-primary ${
-                isActiveLink('/about') ? 'text-primary bg-primary/10' : 'text-foreground'
+              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-accent/10 hover:text-accent ${
+                isActiveLink('/about') ? 'text-accent bg-accent/10' : 'text-secondary'
               }`}
             >
               About
             </Link>
             <Link
               to="/industries"
-              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-primary/10 hover:text-primary ${
-                isActiveLink('/industries') ? 'text-primary bg-primary/10' : 'text-foreground'
+              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-accent/10 hover:text-accent ${
+                isActiveLink('/industries') ? 'text-accent bg-accent/10' : 'text-secondary'
               }`}
             >
               Industries
             </Link>
             <Link
               to="/blog"
-              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-primary/10 hover:text-primary ${
-                isActiveLink('/blog') ? 'text-primary bg-primary/10' : 'text-foreground'
+              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-accent/10 hover:text-accent ${
+                isActiveLink('/blog') ? 'text-accent bg-accent/10' : 'text-secondary'
               }`}
             >
               Blog
             </Link>
             <Link
               to="/contact"
-              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-primary/10 hover:text-primary ${
-                isActiveLink('/contact') ? 'text-primary bg-primary/10' : 'text-foreground'
+              className={`block px-3 py-2 text-sm font-medium rounded-md transition-colors hover:bg-accent/10 hover:text-accent ${
+                isActiveLink('/contact') ? 'text-accent bg-accent/10' : 'text-secondary'
               }`}
             >
               Contact

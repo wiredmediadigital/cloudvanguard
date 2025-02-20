@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,30 +7,30 @@
 
 @layer base {
   :root {
-    --background: 222 47% 11%;
-    --foreground: 210 40% 98%;
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
     
-    --card: 222 47% 11%;
-    --card-foreground: 210 40% 98%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
     
-    --primary: 199 89% 48%;
+    --primary: 217 33% 11%;
     --primary-foreground: 210 40% 98%;
     
-    --secondary: 217 19% 27%;
+    --secondary: 216 32% 17%;
     --secondary-foreground: 210 40% 98%;
     
-    --muted: 217 19% 27%;
+    --muted: 210 40% 96.1%;
     --muted-foreground: 215 20% 65%;
     
-    --accent: 164 85% 45%;
+    --accent: 217 91% 60%;
     --accent-foreground: 210 40% 98%;
     
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217 19% 27%;
-    --input: 217 19% 27%;
-    --ring: 199 89% 48%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 217 91% 60%;
 
     --radius: 0.75rem;
   }
@@ -44,7 +44,7 @@
   }
 
   .glass {
-    @apply bg-secondary/50 backdrop-blur-md border border-white/10 shadow-lg;
+    @apply bg-muted/80 backdrop-blur-md border border-border shadow-lg;
   }
 
   .section-padding {
@@ -52,7 +52,27 @@
   }
 
   .gradient-bg {
-    @apply bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10;
+    @apply bg-gradient-to-br from-primary/5 via-accent/5 to-secondary/5;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-primary;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-semibold text-primary;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl font-semibold text-primary;
+  }
+
+  p {
+    @apply text-base text-secondary;
+  }
+
+  .text-small {
+    @apply text-sm text-secondary;
   }
 }
 

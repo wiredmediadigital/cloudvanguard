@@ -50,6 +50,16 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        sans: ["Inter", "sans-serif"],
+      },
+      fontSize: {
+        "h1": ["3rem", { lineHeight: "1.2", fontWeight: "700" }],
+        "h2": ["2.25rem", { lineHeight: "1.3", fontWeight: "600" }],
+        "h3": ["1.5rem", { lineHeight: "1.4", fontWeight: "600" }],
+        "body": ["1rem", { lineHeight: "1.5", fontWeight: "400" }],
+        "small": ["0.875rem", { lineHeight: "1.5", fontWeight: "400" }],
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -78,10 +88,6 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
         "slide-up": "slide-up 0.5s ease-out",
         "fade-in": "fade-in 0.5s ease-out",
-      },
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
-        display: ["Outfit", "sans-serif"],
       },
       spacing: {
         'section': '8rem',

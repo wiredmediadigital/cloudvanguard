@@ -13,6 +13,11 @@ const solutions = [
     description: "Ongoing security consultation and strategic guidance"
   },
   {
+    icon: Shield,
+    title: "Security Advisor Retainer",
+    description: "24/7 proactive security monitoring and incident response"
+  },
+  {
     icon: Search,
     title: "SOC Analyst Retainer",
     description: "Dedicated security operations center monitoring"

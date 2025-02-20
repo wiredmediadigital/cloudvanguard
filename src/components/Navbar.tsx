@@ -1,22 +1,26 @@
+
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  
   const isActiveLink = (path: string) => {
     return location.pathname === path;
   };
+
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-sans font-bold text-xl">M</span>
+              <span className="text-primary-foreground font-sans font-bold text-xl">C</span>
             </div>
             <span className="font-sans text-xl font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              MSP Solutions
+              CloudSquad365
             </span>
           </Link>
           
@@ -39,7 +43,7 @@ export const Navbar = () => {
             <Link to="/contact" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/contact') ? 'text-accent' : 'text-secondary'}`}>
               Contact
             </Link>
-            <Button variant="default" size="sm" className="font-extralight rounded-sm text-slate-50 bg-gray-950 hover:bg-gray-800">Book A Consultation</Button>
+            <Button variant="default" size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground font-extralight rounded-sm">Book A Consultation</Button>
           </div>
 
           <button className="md:hidden text-primary" onClick={() => setIsOpen(!isOpen)}>
@@ -69,7 +73,7 @@ export const Navbar = () => {
               Contact
             </Link>
             <div className="px-3 py-2">
-              <Button variant="default" size="sm" className="w-full bg-gray-950 hover:bg-gray-800 font-normal text-slate-50">
+              <Button className="w-full bg-accent hover:bg-accent/90 text-accent-foreground" variant="default" size="sm">
                 Get Started
               </Button>
             </div>

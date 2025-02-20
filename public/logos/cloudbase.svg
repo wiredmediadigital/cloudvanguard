@@ -1,5 +1,5 @@
 
 <svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20 10h120v20H20z" stroke="currentColor" stroke-width="2"/>
-  <text x="80" y="25" fill="currentColor" font-family="Arial" font-size="14" text-anchor="middle">CloudBase</text>
+  <path d="M20 10h120v20H20z" fill="#6366F1"/>
+  <text x="80" y="25" fill="white" font-family="Arial" font-size="14" text-anchor="middle">CloudBase</text>
 </svg>

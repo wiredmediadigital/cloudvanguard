@@ -2,9 +2,38 @@
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import Autoplay from "embla-carousel-autoplay";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-const testimonials = [/* ... keep existing code (testimonials array) */];
+const testimonials = [
+  {
+    author: "David Kim",
+    position: "CTO at TechStart Solutions",
+    image: "/avatars/david-kim.jpg",
+    logo: "/logos/techstart.svg",
+    quote: "The Microsoft 365 migration was seamless. Their team's expertise in handling complex enterprise environments made what could have been a challenging transition completely smooth."
+  },
+  {
+    author: "Sarah Chen",
+    position: "IT Director at Global Innovations",
+    image: "/avatars/sarah-chen.jpg",
+    logo: "/logos/global-innovations.svg",
+    quote: "Their security assessment revealed critical vulnerabilities we weren't aware of. The detailed remediation plan helped us strengthen our infrastructure significantly."
+  },
+  {
+    author: "Michael Rodriguez",
+    position: "Security Manager at DataFlex Inc",
+    image: "/avatars/michael-rodriguez.jpg",
+    logo: "/logos/dataflex.svg",
+    quote: "The 24/7 SOC monitoring service has been invaluable. They've detected and prevented several potential security incidents before they could impact our operations."
+  },
+  {
+    author: "Emily Watson",
+    position: "CEO at CloudBase Technologies",
+    image: "/avatars/emily-watson.jpg",
+    logo: "/logos/cloudbase.svg",
+    quote: "Their Azure cloud migration strategy was brilliant. We saw immediate improvements in performance and significant cost savings within the first month."
+  }
+];
 
 const trustedCompanies = [
   {

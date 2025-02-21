@@ -23,9 +23,7 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
           <div className="container mx-auto px-4 relative">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-                About MSP Solutions
-              </h1>
+              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 animate-fade-in">About CloudSqaud IT</h1>
               <p className="text-lg animation-delay-200 animate-fade-in font-thin text-gray-950">
                 Your trusted partner in IT management and digital transformation
               </p>
@@ -61,8 +59,8 @@ const About = () => {
                 Certifications & Partnerships
               </h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                {certifications.map((cert, index) => <div key={index} className="flex items-center space-x-2 text-muted-foreground">
-                    <CheckCircle className="h-5 w-5 text-primary-foreground" />
+                {certifications.map((cert, index) => <div key={index} className="flex items-center space-x-2 text-muted-foreground bg-slate-50">
+                    <CheckCircle className="h-5 w-5 text-primary-foreground bg-zinc-950 hover:bg-zinc-800" />
                     <span className="font-thin text-gray-950">{cert}</span>
                   </div>)}
               </div>

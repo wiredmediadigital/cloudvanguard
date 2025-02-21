@@ -15,7 +15,7 @@ export const Navbar = () => {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-sans font-bold text-xl">C</span>
             </div>
-            <span className="font-sans font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-lg text-[#2f1d8d]/[0.11]">CLOUDSQUAD365</span>
+            <span className="font-sans font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-lg text-gray-950">CLOUDSQUAD365</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
@@ -28,7 +28,7 @@ export const Navbar = () => {
             <Link to="/about" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/about') ? 'text-accent' : 'text-secondary'}`}>
               About
             </Link>
-            <Link to="/industries" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/industries') ? 'text-accent' : 'text-secondary'}`}>
+            <Link to="/industries" className="">
               Industries
             </Link>
             <Link to="/blog" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/blog') ? 'text-accent' : 'text-secondary'}`}>
@@ -37,7 +37,7 @@ export const Navbar = () => {
             <Link to="/contact" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/contact') ? 'text-accent' : 'text-secondary'}`}>
               Contact
             </Link>
-            <Button variant="default" size="sm" className="bg-accent hover:bg-accent/90 text-accent-foreground font-extralight rounded-sm">Book A Consultation</Button>
+            <Button variant="default" size="sm" className="font-extralight rounded-sm bg-gray-950 hover:bg-gray-800 text-slate-50">Book A Consultation</Button>
           </div>
 
           <button className="md:hidden text-primary" onClick={() => setIsOpen(!isOpen)}>

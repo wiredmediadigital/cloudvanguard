@@ -21,6 +21,8 @@ export default {
     extend: {
       fontFamily: {
         sans: ['"futura-pt"', 'Sans-serif'],
+        'futura-condensed': ['"futura-pt-condensed"', 'Sans-serif'],
+        'merriweather': ['Merriweather', 'serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -29,19 +31,19 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
+          DEFAULT: "#333333",
           foreground: "hsl(var(--primary-foreground))",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
+          DEFAULT: "#54595F",
           foreground: "hsl(var(--secondary-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#F7F9FB",
+          foreground: "#7A7A7A",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
+          DEFAULT: "#D3D3D3",
           foreground: "hsl(var(--accent-foreground))",
         },
         destructive: {
@@ -54,7 +56,7 @@ export default {
         },
       },
       fontSize: {
-        "h1": ["3rem", { lineHeight: "1.2", fontWeight: "700" }],
+        "h1": ["3rem", { lineHeight: "1.2", fontWeight: "600" }],
         "h2": ["2.25rem", { lineHeight: "1.3", fontWeight: "600" }],
         "h3": ["1.5rem", { lineHeight: "1.4", fontWeight: "600" }],
         "body": ["1rem", { lineHeight: "1.5", fontWeight: "400" }],

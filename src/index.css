@@ -8,29 +8,29 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 217 33% 17%;
+    --foreground: 0 0% 20%;
     
     --card: 0 0% 100%;
-    --card-foreground: 217 33% 17%;
+    --card-foreground: 0 0% 20%;
     
-    --primary: 222 47% 11%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 20%;
+    --primary-foreground: 0 0% 100%;
     
-    --secondary: 215 25% 27%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 4% 35%;
+    --secondary-foreground: 0 0% 100%;
     
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215 25% 40%;
+    --muted: 213 17% 97%;
+    --muted-foreground: 0 0% 48%;
     
-    --accent: 217 91% 60%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 0 0% 83%;
+    --accent-foreground: 0 0% 20%;
     
     --destructive: 0 84% 60%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 217 91% 60%;
+    --ring: 0 0% 83%;
 
     --radius: 0.75rem;
   }
@@ -42,6 +42,7 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: "futura-pt", Sans-serif;
+    font-weight: 400;
   }
 
   .glass {
@@ -57,28 +58,33 @@
   }
 
   h1 {
-    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-primary;
+    @apply text-4xl md:text-5xl lg:text-6xl text-primary;
     font-family: "futura-pt", Sans-serif;
+    font-weight: 600;
   }
 
   h2 {
-    @apply text-3xl md:text-4xl font-semibold text-primary;
+    @apply text-3xl md:text-4xl text-primary;
     font-family: "futura-pt", Sans-serif;
+    font-weight: 600;
   }
 
   h3 {
-    @apply text-xl md:text-2xl font-semibold text-primary;
+    @apply text-xl md:text-2xl text-primary;
     font-family: "futura-pt", Sans-serif;
+    font-weight: 600;
   }
 
   p {
-    @apply text-base text-primary;
+    @apply text-base text-[#7A7A7A];
     font-family: "futura-pt", Sans-serif;
+    font-weight: 400;
   }
 
   .text-small {
-    @apply text-sm text-primary;
+    @apply text-sm text-[#7A7A7A];
     font-family: "futura-pt", Sans-serif;
+    font-weight: 400;
   }
 }
 

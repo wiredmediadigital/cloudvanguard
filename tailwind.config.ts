@@ -19,6 +19,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['"futura-pt"', 'Sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -49,9 +52,6 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-      },
-      fontFamily: {
-        sans: ["Inter", "sans-serif"],
       },
       fontSize: {
         "h1": ["3rem", { lineHeight: "1.2", fontWeight: "700" }],

@@ -41,6 +41,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
+    font-family: "futura-pt", Sans-serif;
   }
 
   .glass {
@@ -57,22 +58,27 @@
 
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold text-primary;
+    font-family: "futura-pt", Sans-serif;
   }
 
   h2 {
     @apply text-3xl md:text-4xl font-semibold text-primary;
+    font-family: "futura-pt", Sans-serif;
   }
 
   h3 {
     @apply text-xl md:text-2xl font-semibold text-primary;
+    font-family: "futura-pt", Sans-serif;
   }
 
   p {
     @apply text-base text-primary;
+    font-family: "futura-pt", Sans-serif;
   }
 
   .text-small {
     @apply text-sm text-primary;
+    font-family: "futura-pt", Sans-serif;
   }
 }
 

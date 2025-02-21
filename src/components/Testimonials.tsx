@@ -58,7 +58,7 @@ export const Testimonials = () => {
       {/* Trusted Companies Section */}
       <section className="py-12 bg-slate-50">
         <div className="container mx-auto px-4">
-          <h3 className="text-center font-medium mb-8 text-gray-950 text-6xl">Integration Partners</h3>
+          <h3 className="text-center font-medium mb-8 text-gray-950 text-2xl">Integration Partners</h3>
           
           <Carousel opts={{
           align: "start",
@@ -100,14 +100,14 @@ export const Testimonials = () => {
                     </div>
                     
                     <blockquote className="mb-4">
-                      <p className="text-lg italic text-muted-foreground">
+                      <p className="text-lg italic text-gray-950">
                         "{testimonial.quote}"
                       </p>
                     </blockquote>
                     
                     <div>
-                      <p className="font-semibold">{testimonial.author}</p>
-                      <p className="text-sm text-muted-foreground">
+                      <p className="font-semibold text-gray-950">{testimonial.author}</p>
+                      <p className="text-sm text-gray-950">
                         {testimonial.position}
                       </p>
                     </div>

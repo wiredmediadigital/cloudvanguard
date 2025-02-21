@@ -58,7 +58,7 @@ export const Testimonials = () => {
       {/* Trusted Companies Section */}
       <section className="py-12 bg-slate-50">
         <div className="container mx-auto px-4">
-          <h3 className="text-center font-medium mb-8 text-gray-950 text-2xl">Integration Partners</h3>
+          <h3 className="text-center font-medium mb-8 text-gray-950 text-6xl">Integration Partners</h3>
           
           <Carousel opts={{
           align: "start",

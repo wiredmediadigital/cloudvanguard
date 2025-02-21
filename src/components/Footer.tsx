@@ -7,7 +7,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="font-display text-xl font-semibold mb-4">CloudSquad365</h3>
-            <p className="text-muted-foreground mb-4">
+            <p className="mb-4 text-gray-950">
               Your trusted partner in managed IT services and cybersecurity solutions.
             </p>
             <div className="space-y-2">
@@ -96,7 +96,7 @@ export const Footer = () => {
             <h3 className="font-display text-lg font-semibold mb-4">
               Stay Updated
             </h3>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-sm mb-4 text-gray-950">
               Subscribe to our newsletter for the latest cybersecurity insights and updates.
             </p>
             <form className="space-y-2">
@@ -121,7 +121,7 @@ export const Footer = () => {
 
         <div className="border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-gray-950">
               © {new Date().getFullYear()} MSP Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">

@@ -115,7 +115,7 @@ const Contact = () => {
                     <Textarea id="message" name="message" rows={4} value={formData.message} onChange={handleChange} required className="transition-all duration-300 focus:ring-2 focus:ring-primary/50 hover:border-primary/50 resize-none" />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] bg-gradient-to-r from-primary to-accent">
+                  <Button type="submit" size="lg" className="w-full transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] bg-gradient-to-r from-primary to-accent text-zinc-950 bg-gray-950 hover:bg-gray-800">
                     Send Message
                   </Button>
                 </form>

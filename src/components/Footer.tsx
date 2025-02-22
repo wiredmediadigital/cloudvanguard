@@ -79,7 +79,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services/microsoft-365" className="text-sm text-gray-500 hover:text-primary-foreground transition-colors">
+                <Link to="/services/microsoft-365" className="">
                   Microsoft 365 Management
                 </Link>
               </li>

@@ -74,7 +74,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services/cloud-solutions" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services/cloud-solutions" className="">
                   Cloud Solutions
                 </Link>
               </li>

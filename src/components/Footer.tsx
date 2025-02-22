@@ -16,7 +16,7 @@ export const Footer = () => {
                 <Mail className="h-4 w-4 mr-2" />
                 support@cloudvanguard-it.com
               </a>
-              <a href="tel:+1234567890" className="flex items-center text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+              <a href="tel:+1234567890" className="flex items-center text-sm text-muted-foreground hover:text-gray-700 transition-colors\n">
                 <Phone className="h-4 w-4 mr-2" />
                 (123) 456-7890
               </a>

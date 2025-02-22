@@ -46,7 +46,7 @@ const About = () => {
               {values.map((value, index) => <div key={index} className="glass p-6 rounded-lg animate-slide-up" style={{
               animationDelay: `${index * 100}ms`
             }}>
-                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-gray-950 hover:bg-gray-800">
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                     <value.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <h3 className="font-display text-xl font-semibold mb-2">{value.title}</h3>

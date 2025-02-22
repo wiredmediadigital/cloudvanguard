@@ -1,7 +1,6 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
 export const Footer = () => {
   return <footer className="bg-white border-t">
       <div className="container mx-auto px-4 py-12">
@@ -9,7 +8,7 @@ export const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="font-display text-xl font-semibold mb-4">CloudVanguard IT</h3>
-            <p className="text-muted-foreground mb-4">
+            <p className="mb-4 text-zinc-950">
               Your trusted partner in managed IT services and cybersecurity solutions.
             </p>
             <div className="space-y-2 bg-transparent">
@@ -85,7 +84,7 @@ export const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/services/backup-recovery" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services/backup-recovery" className="text-sm text-gray-500 hover:text-primary-foreground transition-colors\n">
                   Backup & Recovery
                 </Link>
               </li>
@@ -97,7 +96,7 @@ export const Footer = () => {
             <h3 className="font-display text-lg font-semibold mb-4">
               Stay Updated
             </h3>
-            <p className="text-sm text-muted-foreground mb-4">
+            <p className="text-sm mb-4 text-zinc-950">
               Subscribe to our newsletter for the latest cybersecurity insights and updates.
             </p>
             <form className="space-y-2">

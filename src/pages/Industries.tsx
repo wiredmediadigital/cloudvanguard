@@ -81,7 +81,7 @@ const Industries = () => {
                     {industry.title}
                   </h3>
 
-                  <p className="text-muted-foreground mb-4">
+                  <p className="mb-4 font-thin text-slate-950">
                     {industry.description}
                   </p>
 

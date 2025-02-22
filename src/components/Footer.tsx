@@ -64,7 +64,7 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services/managed-it" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services/managed-it" className="">
                   Managed IT Services
                 </Link>
               </li>

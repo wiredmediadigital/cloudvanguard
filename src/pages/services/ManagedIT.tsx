@@ -13,7 +13,7 @@ const ManagedIT = () => {
               <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
                 Managed IT Services
               </h1>
-              <p className="text-lg text-muted-foreground animation-delay-200 animate-fade-in">
+              <p className="text-lg animation-delay-200 animate-fade-in text-zinc-950">
                 Comprehensive IT management and support for your business
               </p>
             </div>
@@ -26,7 +26,7 @@ const ManagedIT = () => {
                 <h3 className="font-display text-xl font-semibold mb-3">
                   Infrastructure Management
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-zinc-950">
                   24/7 monitoring and management of your IT infrastructure to ensure optimal performance.
                 </p>
               </div>
@@ -38,7 +38,7 @@ const ManagedIT = () => {
                 <h3 className="font-display text-xl font-semibold mb-3">
                   Security Management
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-zinc-950">
                   Proactive security monitoring and management to protect your business.
                 </p>
               </div>
@@ -50,7 +50,7 @@ const ManagedIT = () => {
                 <h3 className="font-display text-xl font-semibold mb-3">
                   24/7 Support
                 </h3>
-                <p className="text-muted-foreground">
+                <p className="text-zinc-950">
                   Round-the-clock technical support and assistance for your team.
                 </p>
               </div>

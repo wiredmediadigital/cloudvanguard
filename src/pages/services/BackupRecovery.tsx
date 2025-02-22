@@ -20,7 +20,7 @@ const BackupRecovery = () => {
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="glass p-6 rounded-lg animate-slide-up">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-gray-950 hover:bg-gray-800">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                   <Database className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-3">
@@ -32,7 +32,7 @@ const BackupRecovery = () => {
               </div>
 
               <div className="glass p-6 rounded-lg animate-slide-up animation-delay-100">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-gray-950 hover:bg-gray-800">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                   <RefreshCw className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-3">
@@ -44,7 +44,7 @@ const BackupRecovery = () => {
               </div>
 
               <div className="glass p-6 rounded-lg animate-slide-up animation-delay-200">
-                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-gray-950 hover:bg-gray-800">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                   <Cloud className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-3">
@@ -57,7 +57,7 @@ const BackupRecovery = () => {
             </div>
 
             <div className="mt-16 text-center">
-              <Button size="lg" className="animate-fade-in">
+              <Button size="lg" className="animate-fade-in bg-green-900 hover:bg-green-800">
                 Protect Your Data
               </Button>
             </div>

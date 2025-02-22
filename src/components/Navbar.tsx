@@ -1,26 +1,18 @@
-
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  
   const isActiveLink = (path: string) => {
     return location.pathname === path;
   };
-
   return <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/94f77aa9-354c-47e2-a9be-3870964b6aba.png" 
-              alt="CyberVanguard Logo" 
-              className="h-8"
-            />
+            <img alt="CyberVanguard Logo" src="/lovable-uploads/087ce171-da37-4e4c-995f-bf04bc28f1c9.png" className="h-8 object-contain" />
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">

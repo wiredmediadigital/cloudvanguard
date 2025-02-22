@@ -28,7 +28,7 @@ export const Benefits = () => {
           animationDelay: `${index * 100}ms`
         }}>
               <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-950 hover:bg-green-800">
-                <benefit.icon className="h-6 w-6 text-primary-foreground" />
+                <benefit.icon className="h-6 w-6 text-primary-foreground rounded-none" />
               </div>
               
               <h3 className="font-display text-lg md:text-xl font-semibold mb-2">

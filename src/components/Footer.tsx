@@ -1,5 +1,7 @@
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
+
 export const Footer = () => {
   return <footer className="bg-white border-t">
       <div className="container mx-auto px-4 py-12">
@@ -19,7 +21,6 @@ export const Footer = () => {
                 <Phone className="h-4 w-4 mr-2" />
                 (123) 456-7890
               </a>
-              
             </div>
           </div>
 
@@ -30,29 +31,29 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/about" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/industries" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/industries" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Industries
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/blog" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/blog" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Blog & News
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/contact" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Contact Us
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -64,29 +65,29 @@ export const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="/services/managed-it" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services/managed-it" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Managed IT Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/cybersecurity" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services/cybersecurity" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Cybersecurity
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/cloud-solutions" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services/cloud-solutions" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Cloud Solutions
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/microsoft-365" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services/microsoft-365" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Microsoft 365 Management
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/services/backup-recovery" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+                <Link to="/services/backup-recovery" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                   Backup & Recovery
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -125,12 +126,12 @@ export const Footer = () => {
               © {new Date().getFullYear()} MSP Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="/privacy" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+              <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                 Privacy Policy
-              </a>
-              <a href="/terms" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
+              </Link>
+              <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary-foreground transition-colors">
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>

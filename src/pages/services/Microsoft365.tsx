@@ -76,7 +76,7 @@ const Microsoft365 = () => {
                   <h3 className="font-display text-xl font-semibold mb-3">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-zinc-900">
                     {service.description}
                   </p>
                 </div>)}

@@ -71,7 +71,7 @@ const Microsoft365 = () => {
               animationDelay: `${index * 100}ms`
             }}>
                   <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
-                    <service.icon className="h-6 w-6 text-primary" />
+                    <service.icon className="h-6 w-6 text-[#f0f0f0]" />
                   </div>
                   <h3 className="font-display text-xl font-semibold mb-3">
                     {service.title}

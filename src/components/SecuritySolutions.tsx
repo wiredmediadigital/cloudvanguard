@@ -59,7 +59,7 @@ export const SecuritySolutions = () => {
           {solutions.map((solution, index) => <div key={index} className="glass p-6 rounded-lg flex flex-col animate-fade-in hover:shadow-xl transition-shadow duration-300" style={{
           animationDelay: `${index * 100}ms`
         }}>
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-950 hover:bg-green-800">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                 <solution.icon className="h-6 w-6 text-[#f0f0f0]" />
               </div>
               

@@ -57,7 +57,7 @@ const Cybersecurity = () => {
             </div>
 
             <div className="mt-16 text-center">
-              <Button size="lg" className="animate-fade-in">
+              <Button size="lg" className="animate-fade-in bg-green-900 hover:bg-green-800">
                 Protect Your Business
               </Button>
             </div>

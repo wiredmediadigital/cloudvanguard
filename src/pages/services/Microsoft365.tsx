@@ -70,7 +70,7 @@ const Microsoft365 = () => {
               {services.map((service, index) => <div key={index} className="glass p-6 rounded-lg animate-slide-up hover:shadow-lg transition-all duration-300" style={{
               animationDelay: `${index * 100}ms`
             }}>
-                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-emerald-500 hover:bg-emerald-400">
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                     <service.icon className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="font-display text-xl font-semibold mb-3">

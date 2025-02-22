@@ -70,9 +70,7 @@ const Services = () => {
             </div>
 
             <div className="mt-16 text-center">
-              <Button size="lg" className="animate-fade-in bg-green-900 hover:bg-green-800">
-                Schedule a Consultation
-              </Button>
+              <Button size="lg" className="animate-fade-in bg-green-900 hover:bg-green-800">Schedule A Consultation</Button>
             </div>
           </div>
         </section>

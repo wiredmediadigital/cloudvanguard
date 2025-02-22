@@ -16,22 +16,22 @@ export const Navbar = () => {
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
-            <Link to="/" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/') ? 'text-accent' : 'text-primary'}`}>
+            <Link to="/" className="">
               Home
             </Link>
-            <Link to="/services" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/services') ? 'text-accent' : 'text-primary'}`}>
+            <Link to="/services" className="">
               Services
             </Link>
-            <Link to="/about" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/about') ? 'text-accent' : 'text-primary'}`}>
+            <Link to="/about" className="">
               About
             </Link>
-            <Link to="/industries" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/industries') ? 'text-accent' : 'text-primary'}`}>
+            <Link to="/industries" className="">
               Industries
             </Link>
-            <Link to="/blog" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/blog') ? 'text-accent' : 'text-primary'}`}>
+            <Link to="/blog" className="">
               Blog
             </Link>
-            <Link to="/contact" className={`text-sm font-medium transition-colors hover:text-accent ${isActiveLink('/contact') ? 'text-accent' : 'text-primary'}`}>
+            <Link to="/contact" className="">
               Contact
             </Link>
             <Button variant="default" size="sm" className="font-extralight rounded-sm text-slate-50 bg-green-900 hover:bg-green-800">Book A Consultation</Button>

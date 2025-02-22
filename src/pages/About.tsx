@@ -23,7 +23,7 @@ const About = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
           <div className="container mx-auto px-4 relative">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 animate-fade-in">About CloudSqaud IT</h1>
+              <h1 className="font-display text-4xl md:text-5xl font-bold mb-6 animate-fade-in">About CloudVanguard IT</h1>
               <p className="text-lg animation-delay-200 animate-fade-in font-thin text-gray-950">
                 Your trusted partner in IT management and digital transformation
               </p>

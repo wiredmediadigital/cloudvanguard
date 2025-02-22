@@ -5,22 +5,10 @@ import { ArrowRight } from "lucide-react";
 export const Hero = () => {
   return (
     <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative overflow-hidden">
-      {/* Background Image Container */}
-      <div 
-        className="absolute inset-0 z-0" 
-        style={{
-          backgroundImage: `url('/lovable-uploads/087ce171-da37-4e4c-995f-bf04bc28f1c9.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          opacity: '0.1'
-        }}
-      />
+      {/* Gradient Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
       
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10 z-1" />
-      
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 animate-fade-in">
             Your Trusted Partner in Advanced Cyber Security Solutions

@@ -1,12 +1,9 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Shield, Lock, Eye, AlertTriangle, FileWarning } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
 const Cybersecurity = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       <main>
         <section className="pt-32 pb-16 md:pt-40 md:pb-24 relative">
@@ -23,7 +20,7 @@ const Cybersecurity = () => {
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               <div className="glass p-6 rounded-lg animate-slide-up">
-                <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                   <Shield className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-3">
@@ -35,7 +32,7 @@ const Cybersecurity = () => {
               </div>
 
               <div className="glass p-6 rounded-lg animate-slide-up animation-delay-100">
-                <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                   <Lock className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-3">
@@ -47,7 +44,7 @@ const Cybersecurity = () => {
               </div>
 
               <div className="glass p-6 rounded-lg animate-slide-up animation-delay-200">
-                <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
                   <Eye className="h-6 w-6 text-primary-foreground" />
                 </div>
                 <h3 className="font-display text-xl font-semibold mb-3">
@@ -68,8 +65,6 @@ const Cybersecurity = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Cybersecurity;

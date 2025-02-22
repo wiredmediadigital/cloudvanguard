@@ -27,7 +27,7 @@ export const Benefits = () => {
           {benefits.map((benefit, index) => <div key={index} className="glass p-6 rounded-lg animate-slide-up hover:-translate-y-1 transition-transform duration-300" style={{
           animationDelay: `${index * 100}ms`
         }}>
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-zinc-900 hover:bg-zinc-800">
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-emerald-950 hover:bg-emerald-800">
                 <benefit.icon className="h-6 w-6 text-primary-foreground" />
               </div>
               

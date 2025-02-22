@@ -121,7 +121,7 @@ export const Footer = () => {
 
         <div className="border-t pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-gray-950">
               © {new Date().getFullYear()} MSP Solutions. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">

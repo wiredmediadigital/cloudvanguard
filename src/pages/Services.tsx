@@ -1,70 +1,35 @@
-
 import { Navbar } from "@/components/Navbar";
 import { Shield, Headset, Lock, Server, Database, Clock, LineChart, BarChart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Footer } from "@/components/Footer";
-
-const services = [
-  {
-    icon: Shield,
-    title: "Professional Services",
-    description: "Expert IT consulting and implementation services tailored to your business needs and goals.",
-    features: [
-      "IT strategy consulting",
-      "Project management",
-      "Implementation services",
-      "Technology assessment"
-    ]
-  },
-  {
-    icon: Clock,
-    title: "24/7 Managed Security Services",
-    description: "Round-the-clock monitoring and management of your IT security infrastructure.",
-    features: [
-      "Continuous monitoring",
-      "Incident response",
-      "Security updates",
-      "Threat prevention"
-    ]
-  },
-  {
-    icon: Lock,
-    title: "Cyber Threat Intelligence Services",
-    description: "Advanced threat detection and intelligence services to protect your business.",
-    features: [
-      "Threat detection",
-      "Intelligence reporting",
-      "Vulnerability assessment",
-      "Security advisories"
-    ]
-  },
-  {
-    icon: LineChart,
-    title: "Performance Analytics Services",
-    description: "Comprehensive analytics and reporting to optimize your IT infrastructure performance.",
-    features: [
-      "Performance monitoring",
-      "System analytics",
-      "Resource optimization",
-      "Trend analysis"
-    ]
-  },
-  {
-    icon: Server,
-    title: "Cloud & SaaS Management",
-    description: "Expert management of your cloud infrastructure and SaaS applications for optimal performance and security.",
-    features: [
-      "Cloud infrastructure optimization",
-      "SaaS application management",
-      "Cloud security",
-      "Performance monitoring"
-    ]
-  }
-];
-
+const services = [{
+  icon: Shield,
+  title: "Professional Services",
+  description: "Expert IT consulting and implementation services tailored to your business needs and goals.",
+  features: ["IT strategy consulting", "Project management", "Implementation services", "Technology assessment"]
+}, {
+  icon: Clock,
+  title: "24/7 Managed Security Services",
+  description: "Round-the-clock monitoring and management of your IT security infrastructure.",
+  features: ["Continuous monitoring", "Incident response", "Security updates", "Threat prevention"]
+}, {
+  icon: Lock,
+  title: "Cyber Threat Intelligence Services",
+  description: "Advanced threat detection and intelligence services to protect your business.",
+  features: ["Threat detection", "Intelligence reporting", "Vulnerability assessment", "Security advisories"]
+}, {
+  icon: LineChart,
+  title: "Performance Analytics Services",
+  description: "Comprehensive analytics and reporting to optimize your IT infrastructure performance.",
+  features: ["Performance monitoring", "System analytics", "Resource optimization", "Trend analysis"]
+}, {
+  icon: Server,
+  title: "Cloud & SaaS Management",
+  description: "Expert management of your cloud infrastructure and SaaS applications for optimal performance and security.",
+  features: ["Cloud infrastructure optimization", "SaaS application management", "Cloud security", "Performance monitoring"]
+}];
 const Services = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       <main>
         <section className="pt-32 pb-16 md:pt-40 md:pb-24 relative">
@@ -80,14 +45,11 @@ const Services = () => {
             </div>
 
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {services.map((service, index) => (
-                <div
-                  key={index}
-                  className="glass p-6 rounded-lg animate-slide-up"
-                  style={{ animationDelay: `${index * 100}ms` }}
-                >
-                  <div className="bg-primary/10 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                    <service.icon className="h-6 w-6 text-[#1A1F2C]" />
+              {services.map((service, index) => <div key={index} className="glass p-6 rounded-lg animate-slide-up" style={{
+              animationDelay: `${index * 100}ms`
+            }}>
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
+                    <service.icon className="h-6 w-6 text-[#f0f0f0]" />
                   </div>
 
                   <h3 className="font-display text-xl font-semibold mb-3">
@@ -99,18 +61,12 @@ const Services = () => {
                   </p>
 
                   <ul className="space-y-2">
-                    {service.features.map((feature, featureIndex) => (
-                      <li
-                        key={featureIndex}
-                        className="flex items-center text-sm text-muted-foreground"
-                      >
+                    {service.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
                         <div className="w-1.5 h-1.5 rounded-full bg-[#1A1F2C] mr-2" />
                         {feature}
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             <div className="mt-16 text-center">
@@ -122,8 +78,6 @@ const Services = () => {
         </section>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Services;

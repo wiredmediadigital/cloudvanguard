@@ -15,7 +15,7 @@ export const Navbar = () => {
             <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
               <span className="text-primary-foreground font-sans font-bold text-xl">C</span>
             </div>
-            <span className="font-sans font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-lg text-gray-950">CLOUDSQUAD-IT</span>
+            <span className="font-sans font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-lg text-gray-950">CloudVanguard</span>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">

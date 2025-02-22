@@ -36,7 +36,7 @@ export const Process = () => {
             animationDelay: `${index * 200}ms`
           }}>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-green-950 hover:bg-green-800">
+                  <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-green-900 hover:bg-green-800">
                     <step.icon className="h-6 w-6 text-primary-foreground" />
                   </div>
                   <span className="font-display text-4xl font-bold text-zinc-950">

@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 export const Hero = () => {
-  return (
-    <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative overflow-hidden">
+  return <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
       
       <div className="container mx-auto px-4 relative">
@@ -17,12 +14,11 @@ export const Hero = () => {
             Specializing in Microsoft Azure, O365, and Intune with over 10 years of experience in securing and optimizing IT infrastructures.
           </p>
           
-          <Button size="lg" className="animation-delay-400 animate-fade-in w-full md:w-auto">
+          <Button size="lg" className="animation-delay-400 animate-fade-in w-full md:w-auto bg-green-900 hover:bg-green-800">
             Get a Free IT Assessment
             <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

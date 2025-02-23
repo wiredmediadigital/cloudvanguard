@@ -1,5 +1,4 @@
 
 <svg width="160" height="40" viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20 10h120v4H20zm0 8h120v4H20zm0 8h120v4H20z" fill="#1F70C1"/>
-  <text x="80" y="25" fill="currentColor" font-family="Arial" font-size="14" text-anchor="middle">IBM</text>
+  <path d="M20 12h120v3H20zm0 6h120v3H20zm0 6h120v3H20zm0 6h120v3H20zm40-18h10v18H60zm30 0h10v18H90z" fill="#1F70C1"/>
 </svg>

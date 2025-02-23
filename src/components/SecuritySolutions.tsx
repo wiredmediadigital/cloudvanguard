@@ -8,12 +8,12 @@ const solutions = [
     description: "Seamless email transition from Google Workspace to Microsoft 365"
   }, {
     icon: Shield,
-    title: "Proactive Security",
-    description: "24/7 proactive security monitoring and incident response"
-  }, {
-    icon: Shield,
     title: "Security Advisor Retainer",
     description: "Ongoing security consultation and strategic guidance"
+  }, {
+    icon: Shield,
+    title: "Proactive Security",
+    description: "24/7 proactive security monitoring and incident response"
   }, {
     icon: Search,
     title: "SOC Analyst Retainer",
@@ -55,35 +55,30 @@ const solutions = [
 
 export const SecuritySolutions = () => {
   return (
-    <section className="py-20 lg:py-32 bg-gradient-to-b from-white to-slate-50">
+    <section className="py-12 sm:py-16 md:py-20 lg:py-24 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-3xl mx-auto text-center mb-12 lg:mb-20">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
-            Professional Security Solutions
-          </h2>
-          <p className="text-lg text-gray-600">
-            Comprehensive security solutions designed to protect your business assets and data
-          </p>
-        </div>
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-10 md:mb-12 text-gray-950">
+          We Offer Professional Security Solutions
+        </h2>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {solutions.map((solution, index) => (
             <div 
               key={index} 
-              className="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 animate-fade-in flex flex-col" 
+              className="glass p-6 rounded-lg flex flex-col animate-fade-in hover:shadow-xl transition-shadow duration-300" 
               style={{
                 animationDelay: `${index * 100}ms`
               }}
             >
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-6 bg-green-900 hover:bg-green-800">
-                <solution.icon className="h-6 w-6 text-white" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center mb-4 bg-green-900 hover:bg-green-800">
+                <solution.icon className="h-6 w-6 text-[#f0f0f0]" />
               </div>
               
-              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 text-gray-950">
                 {solution.title}
               </h3>
               
-              <p className="text-gray-600 flex-grow">
+              <p className="text-sm sm:text-base text-gray-700">
                 {solution.description}
               </p>
             </div>

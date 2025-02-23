@@ -101,7 +101,7 @@ export const Footer = () => {
             </p>
             <form className="space-y-2">
               <input type="email" placeholder="Enter your email" className="w-full px-4 py-2 text-sm border rounded-md focus:outline-none focus:ring-2 focus:ring-primary" />
-              <Button type="submit" className="w-full">
+              <Button type="submit" className="w-full bg-green-900 hover:bg-green-800">
                 Subscribe
               </Button>
             </form>

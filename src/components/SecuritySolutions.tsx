@@ -1,3 +1,4 @@
+
 import { Shield, Mail, Lock, Search, Server, BarChart, Cloud, AlertTriangle, Database, FileCheck, ShieldCheck } from "lucide-react";
 
 const solutions = [
@@ -11,7 +12,7 @@ const solutions = [
     description: "Ongoing security consultation and strategic guidance"
   }, {
     icon: Shield,
-    title: "Security Advisor Retainer",
+    title: "Proactive Security",
     description: "24/7 proactive security monitoring and incident response"
   }, {
     icon: Search,

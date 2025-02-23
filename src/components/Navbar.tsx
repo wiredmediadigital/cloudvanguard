@@ -45,7 +45,7 @@ export const Navbar = () => {
               variant="default" 
               size="sm" 
               className="font-extralight rounded-sm text-slate-50 bg-green-900 hover:bg-green-800"
-              onClick={() => window.open('https://app.cal.com/event-types', '_blank')}
+              onClick={() => window.open('https://cal.com/cloudvanguard-it/15min', '_blank')}
             >
               <Calendar className="mr-2 h-4 w-4" />
               Book A Consultation
@@ -83,7 +83,7 @@ export const Navbar = () => {
                 className="w-full bg-green-900 hover:bg-green-800 text-slate-50" 
                 variant="default" 
                 size="sm"
-                onClick={() => window.open('https://app.cal.com/event-types', '_blank')}
+                onClick={() => window.open('https://cal.com/cloudvanguard-it/15min', '_blank')}
               >
                 <Calendar className="mr-2 h-4 w-4" />
                 Book A Consultation

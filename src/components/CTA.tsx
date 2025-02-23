@@ -13,7 +13,7 @@ export const CTA = () => {
         <Button 
           size="lg" 
           className="animate-fade-in animation-delay-200 w-full sm:w-auto bg-green-900 hover:bg-green-800 text-slate-50"
-          onClick={() => window.open('https://app.cal.com/event-types', '_blank')}
+          onClick={() => window.open('https://cal.com/cloudvanguard-it/15min', '_blank')}
         >
           <Calendar className="mr-2 h-5 w-5" />
           Schedule a Free Consultation

@@ -18,7 +18,7 @@ export const Hero = () => {
           <Button 
             size="lg" 
             className="animation-delay-400 animate-fade-in w-full sm:w-auto bg-green-900 hover:bg-green-800"
-            onClick={() => window.open('https://app.cal.com/event-types', '_blank')}
+            onClick={() => window.open('https://cal.com/cloudvanguard-it/15min', '_blank')}
           >
             <Calendar className="mr-2 h-5 w-5" />
             Get a Free IT Assessment

@@ -12,7 +12,7 @@ export const Footer = () => {
               Your trusted partner in managed IT services and cybersecurity solutions.
             </p>
             <div className="space-y-2 bg-transparent">
-              <a href="mailto:support@cloudvanguard-it.com" className="flex items-center text-sm text-muted-foreground hover:text-gray-700 transition-colors\n">
+              <a href="mailto:support@cloudvanguard-it.com" className="">
                 <Mail className="h-4 w-4 mr-2" />
                 support@cloudvanguard-it.com
               </a>

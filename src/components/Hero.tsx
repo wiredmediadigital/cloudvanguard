@@ -1,11 +1,28 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { Waves } from "@/components/ui/waves-background";
 
 export const Hero = () => {
   return (
     <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative overflow-hidden">
-      <div className="container mx-auto px-4">
+      {/* Interactive Waves Background */}
+      <Waves
+        lineColor="rgba(0, 0, 0, 0.1)"
+        backgroundColor="transparent"
+        waveSpeedX={0.02}
+        waveSpeedY={0.01}
+        waveAmpX={40}
+        waveAmpY={20}
+        friction={0.9}
+        tension={0.01}
+        maxCursorMove={120}
+        xGap={12}
+        yGap={36}
+        className="z-0"
+      />
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-display md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 animate-fade-in text-slate-950 text-6xl">
             Your Trusted Partner in Advanced Cyber Security Solutions

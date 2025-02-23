@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { Menu, Cloud } from "lucide-react";
+import { Menu, Cloud, Calendar } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 export const Navbar = () => {
@@ -40,7 +41,15 @@ export const Navbar = () => {
             <Link to="/contact" className="">
               Contact
             </Link>
-            <Button variant="default" size="sm" className="font-extralight rounded-sm text-slate-50 bg-green-900 hover:bg-green-800">Book A Consultation</Button>
+            <Button 
+              variant="default" 
+              size="sm" 
+              className="font-extralight rounded-sm text-slate-50 bg-green-900 hover:bg-green-800"
+              onClick={() => window.open('https://app.cal.com/event-types', '_blank')}
+            >
+              <Calendar className="mr-2 h-4 w-4" />
+              Book A Consultation
+            </Button>
           </div>
 
           <button className="md:hidden text-primary" onClick={() => setIsOpen(!isOpen)}>
@@ -70,8 +79,14 @@ export const Navbar = () => {
               Contact
             </Link>
             <div className="px-3 py-2">
-              <Button className="w-full bg-gray-950 hover:bg-gray-800 text-slate-50" variant="default" size="sm">
-                Get Started
+              <Button 
+                className="w-full bg-green-900 hover:bg-green-800 text-slate-50" 
+                variant="default" 
+                size="sm"
+                onClick={() => window.open('https://app.cal.com/event-types', '_blank')}
+              >
+                <Calendar className="mr-2 h-4 w-4" />
+                Book A Consultation
               </Button>
             </div>
           </div>

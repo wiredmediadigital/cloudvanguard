@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Calendar } from "lucide-react";
 
 export const Hero = () => {
   return (
@@ -15,9 +15,13 @@ export const Hero = () => {
             Specializing in Microsoft Azure, O365, and Intune with over 10 years of experience in securing and optimizing IT infrastructures.
           </p>
           
-          <Button size="lg" className="animation-delay-400 animate-fade-in w-full sm:w-auto bg-green-900 hover:bg-green-800">
+          <Button 
+            size="lg" 
+            className="animation-delay-400 animate-fade-in w-full sm:w-auto bg-green-900 hover:bg-green-800"
+            onClick={() => window.open('https://app.cal.com/event-types', '_blank')}
+          >
+            <Calendar className="mr-2 h-5 w-5" />
             Get a Free IT Assessment
-            <ArrowRight className="ml-2 h-4 w-4" />
           </Button>
         </div>
       </div>

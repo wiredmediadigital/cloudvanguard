@@ -1,16 +1,13 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 export const Hero = () => {
-  return (
-    <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative overflow-hidden">
+  return <section className="pt-24 md:pt-32 pb-16 md:pb-24 relative overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-accent/10" />
       
       <div className="container mx-auto px-4 relative">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 animate-fade-in">
+          <h1 className="font-display md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 animate-fade-in text-slate-950 text-6xl">
             Your Trusted Partner in Advanced Cyber Security Solutions
           </h1>
           
@@ -24,6 +21,5 @@ export const Hero = () => {
           </Button>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };

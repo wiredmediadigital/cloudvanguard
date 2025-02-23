@@ -49,7 +49,7 @@ const solutions = [{
   description: "Enhanced email security and threat protection"
 }];
 export const SecuritySolutions = () => {
-  return <section className="section-padding bg-slate-50">
+  return <section className="section-padding bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-950">
           We Offer Professional Security Solutions

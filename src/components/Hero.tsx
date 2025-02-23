@@ -6,7 +6,7 @@ import { BackgroundPaths } from "@/components/ui/background-paths";
 export const Hero = () => {
   return (
     <section className="relative min-h-screen">
-      <BackgroundPaths title="Secure Your Future" />
+      <BackgroundPaths />
       <div className="absolute inset-0 flex items-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center">

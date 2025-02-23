@@ -35,20 +35,14 @@ const trustedCompanies = [{
   name: "Microsoft",
   logo: "/logos/microsoft.svg"
 }, {
-  name: "IBM",
-  logo: "/logos/ibm.svg"
+  name: "Twilio",
+  logo: "/logos/twilio.svg"
 }, {
   name: "Cisco",
   logo: "/logos/cisco.svg"
 }, {
   name: "AWS",
   logo: "/logos/aws.svg"
-}, {
-  name: "Oracle",
-  logo: "/logos/oracle.svg"
-}, {
-  name: "VMware",
-  logo: "/logos/vmware.svg"
 }];
 
 // Double the array to create a seamless loop
@@ -74,11 +68,11 @@ export const Testimonials = () => {
           }} plugins={[autoplayPlugin]} className="w-full">
             <CarouselContent className="-ml-2 md:-ml-4">
               {extendedCompanies.map((company, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/6">
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 md:basis-1/3 lg:basis-1/4">
                   <img 
                     src={company.logo} 
                     alt={company.name} 
-                    className="max-h-8 w-auto opacity-80 hover:opacity-100 transition-opacity mx-auto"
+                    className="max-h-12 w-auto opacity-80 hover:opacity-100 transition-opacity mx-auto"
                   />
                 </CarouselItem>
               ))}

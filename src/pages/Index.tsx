@@ -7,6 +7,7 @@ import { Process } from "@/components/Process";
 import { Testimonials } from "@/components/Testimonials";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
+import { CyberSecurityPractices } from "@/components/CyberSecurityPractices";
 
 const Index = () => {
   return (
@@ -14,6 +15,7 @@ const Index = () => {
       <Navbar />
       <main>
         <Hero />
+        <CyberSecurityPractices />
         <Benefits />
         <SecuritySolutions />
         <Process />

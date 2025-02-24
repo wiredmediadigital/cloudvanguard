@@ -1,7 +1,8 @@
+
 import { Shield, Lock, Eye, AlertTriangle } from "lucide-react";
 const practices = [{
-  title: "Multi-Factor Authentication",
-  description: "Enable MFA across all accounts to add an extra layer of security beyond passwords."
+  title: "Integrated platform for IT and security",
+  description: "Cloud-based backup protects your critical data"
 }, {
   title: "Regular Security Audits",
   description: "Conduct frequent security assessments to identify and address potential vulnerabilities."
@@ -9,7 +10,7 @@ const practices = [{
   title: "Data Encryption",
   description: "Implement end-to-end encryption for sensitive data both in transit and at rest."
 }, {
-  title: "Employee Training",
+  title: "Automated patch management for cross-OS",
   description: "Regular security awareness training for all staff members to maintain a strong security culture."
 }];
 export const CyberSecurityPractices = () => {
